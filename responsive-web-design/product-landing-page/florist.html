@@ -1,0 +1,113 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project: Product Landing</title>
+  <style>
+    main {
+      display: table;
+      margin: auto;
+    }
+
+    header {
+      position: fixed;
+      float: top;
+      top: 0;
+      width: 100%;
+      background: pink;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    nav>ul {
+      width: 35vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .btn {
+      padding: 0 20px;
+      height: 40px;
+      font-size: 2em;
+      font-weight: 900;
+      text-transform: uppercase;
+      border: 3px black solid;
+      border-radius: 5px;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    #hero {
+      margin-top: 100px;
+    }
+
+    section {
+      margin-top: 100px;
+      padding: 50px;
+    }
+
+    @media(max-width:800px) {
+      nav>ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body id="page-wrapper">
+  <header id="header">
+    <img id="header-img" src="https://img.freepik.com/free-vector/isolated-flower-shop-white-background_1308-48529.jpg" height="60px" width="80px" alt="Phool-bagiya">
+    <nav id="nav-bar">
+      <ul type="circle">
+        <li><a class="nav-link" href="#featured">Featured</a></li>
+        <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+        <li><a class="nav-link" href="#order-now">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="hero">
+      <h1>Decorate with original Flowers</h1>
+      <form id="form" action="https://www.phool-bagiya.in/email-submit">
+        <input name="email" id="email" type="email" placeholder="Email your queries" required />
+        <input id="submit" type="submit" value="Get in Touch" />
+        <p> We will reply back with your request and<br> assure you the satisfaction you wish.
+      </form>
+
+    </div>
+    <section id="featured">
+      <h3>Popular Flowers</h3>
+      <video id="video" controls width="250">
+
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </section>
+    <section id="how-it-works">
+      <h3> How we provide our services?</h3>
+      <ol>
+        <li>We help you decide flowers over call and email.
+        <li>You place the orders
+        <li>We collect the fresh flowers from the farm.
+        <li>Pack it up carefully, and dispatch it to your location.
+        <li>Our delievery person will help you with decoration and tips.
+      </ol>
+    </section>
+    <section id="order-now">
+      <p>We will help you choose the flowers on the basis of colour, scent and event requirement. We also help you customize bonquets.<br> <br>
+        <br>
+        <button class="btn">Get flowers</button>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
