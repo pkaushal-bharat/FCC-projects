@@ -1,2 +1,2 @@
 # FCC-projects
-Repo for the projects done on &lt;a href="https://www.freecodecamp.org/">freeCodeCamp&lt;/a>
+Repo for the projects done on <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
