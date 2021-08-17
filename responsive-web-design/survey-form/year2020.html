@@ -1,0 +1,127 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project: Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <header class="header">
+                <h1 id="title" class="text-center">Year 2020: Survey Form</h1>
+                <p id="description" class="description text-center">Tell us how was this year by participating in this survey.</p>
+            </header>
+
+            <form id="survey-form" action="">
+
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your personal Email" required="">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(in years)</span></label>
+                    <input type="number" name="age" id="number" min="11" max="111" class="form-control" placeholder="Your Age at the end of the year"  required="">
+                </div>
+                <div class="form-group">
+                    <p>Which month was best for you in 2020?</p>
+                    <select id="dropdown" name="best-month" class="form-control" required="">
+                      <option disabled="" selected="" value="">Select best month in the year</option>
+                      <option value="jan">January</option>
+                      <option value="feb">February</option>
+                      <option value="march">March</option>
+                      <option value="april">April</option>
+                      <option value="may">May</option>
+                      <option value="june">June</option>
+                      <option value="july">July</option>
+                      <option value="aug">August</option>
+                      <option value="sept">September</option>
+                      <option value="oct">October</option>
+                      <option value="nov">November</option>
+                      <option value="dec">December</option>                                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Which month was worst for you in 2020?</p>
+                    <select id="dropdown" name="worst-month" class="form-control" required="">
+                      <option disabled="" selected="" value="">Select worst month in the year</option>
+                      <option value="jan">January</option>
+                      <option value="feb">February</option>
+                      <option value="march">March</option>
+                      <option value="april">April</option>
+                      <option value="may">May</option>
+                      <option value="june">June</option>
+                      <option value="july">July</option>
+                      <option value="aug">August</option>
+                      <option value="sept">September</option>
+                      <option value="oct">October</option>
+                      <option value="nov">November</option>
+                      <option value="dec">December</option>                                            
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Were you infected with SARS Covid19 virus?</p>
+                    <label>
+                        <input name="corona-infected" value="no" type="radio" class="input-radio" checked="">No, lucky me!</label>
+                    <label>
+                        <input name="corona-infected" value="yes-asympt" type="radio" class="input-radio">Yes, Asymptomatic</label>
+                    <label>
+                        <input name="corona-infected" value="yes-sympt" type="radio" class="input-radio">Yes, Symptomatic</label>
+                    <label>
+                        <input name="corona-infected" value="not-sure" type="radio" class="input-radio">Not Sure</label>
+                </div>
+                <div class="form-group">
+                    <p>Did you lose your loved one this year?</p>
+                    <label>
+                        <input name="lost-loved" value="no" type="radio" class="input-radio" checked="">No, Thank god!</label>
+                    <label>
+                        <input name="lost-loved" value="yes-natural" type="radio" class="input-radio">Yes, natural death</label>
+                    <label>
+                        <input name="lost-loved" value="yes-crisis" type="radio" class="input-radio">Yes, due to pandemic</label>
+                </div>
+                <div class="form-group">
+                    <p>
+                      What did you do in the lockdown/crisis?
+                      <span class="clue">(Check all that apply)</span>
+                    </p>
+              
+                    <label><input name="action" value="new-skill" type="checkbox" class="input-checkbox">Learnt New Skills</label>
+                    <label>
+                      <input name="action" value="upgrade-skill" type="checkbox" class="input-checkbox">Upgraded My Skills</label>
+                    <label><input name="action" value="online-class" type="checkbox" class="input-checkbox">Online Classes</label>
+                    <label><input name="action" value="focus-lifestyle" type="checkbox" class="input-checkbox">Lifestyle Improvement</label>
+                    <label><input name="action" value="pending-job" type="checkbox" class="input-checkbox">Pending Jobs</label>
+                    <label><input name="action" value="hobby-passion" type="checkbox" class="input-checkbox">Hobby/Passion</label>
+                    <label><input name="action" value="read" type="checkbox" class="input-checkbox">Reading habbit</label>
+                    <label><input name="action" value="write" type="checkbox" class="input-checkbox">Writing habbit</label>
+                    <label><input name="action" value="mental-health" type="checkbox" class="input-checkbox">Mental Discipline</label>
+                    <label><input name="action" value="spirituality" type="checkbox" class="input-checkbox">Spiritual Pursue</label>
+                    <label><input name="action" value="analysis-plan" type="checkbox" class="input-checkbox">Analysis & Future Planning</label>
+                </div>
+                <div class="form-group">
+                    <p>Anything else that you did?</p>
+                    <textarea id="extra-actions" class="input-textarea" name="extra-actions" placeholder="Enter what else you did...(Separate using commas)"></textarea>
+                </div>
+                <div class="form-group">
+                    <input name="ask-result" value="request-result" type="checkbox" class="input-checkbox">
+                      <label>Send me the result of this survey.</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        <footer id="footer">
+            <p>This is my project work of responsive web design for sample survey form using html&css only. Inspired from <a id="fcc-sample" href="https://codepen.io/freeCodeCamp/full/VPaoNP" target="_blank">freeCodeCamp Survey Form</a></p>
+            <p>&copy; Free to use as you wish if you <a id="contact" href="">inform me.</a></p>
+        </footer>
+        </main>
+    </body>
+</html>
